@@ -9,7 +9,7 @@ Este es mi primer portfolio personal como parte de un proyecto de Ada. En el mis
 - Diseño Responsivo
 
 
-URL: 
+URL: https://mariela-maidana.github.io/Proyecto-Portfolio/
 
 ---
 
@@ -24,6 +24,6 @@ This is my first personal portfolio as part of an Ada project. In it, are the te
 - Responsive Design
 
 
-URL: 
+URL: https://mariela-maidana.github.io/Proyecto-Portfolio/
 
 
