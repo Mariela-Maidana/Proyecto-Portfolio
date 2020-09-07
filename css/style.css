@@ -6,6 +6,9 @@
 }
 
 body {
+    /* Salvo font family y background-color, ninguno de los estilos que le diste al body tiene
+    algun efecto en tu web. Tenes ordenes de flex pero no le diste display flex, el body siempre
+    tiene un width de 100vw, ya de por si tiene display block.  */
     background-color: #f6f7fb;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
@@ -27,6 +30,8 @@ HEADER
 ----------------------------*/
 
 header {
+    /* No es necesario width 100%, y a veces nos puede jugar en contra (si damos margin por ejemplo, 
+    quedaria mas ancho que el body) */
     width: 100%;
     background: white;
     height: 90px;
@@ -39,6 +44,7 @@ header {
     box-sizing: border-box;
 }
 
+/* No recomendamos usar float nunca. Este tipo de soluciones se deben hacer con flex.  */
 header nav {
     float: right;
 }
@@ -48,6 +54,8 @@ header nav {
     justify-content: flex-end;
     margin-right: 26%;
     line-height: 45px;
+
+    /* no es recomendable usar float */
     float: right;
 }
 
@@ -83,6 +91,7 @@ Seccion de presentacion!!
 -----------------------------*/
 
 .seccion-presentacion {
+    /* no es necesario el width de 100%. Fijate que estas repitiendo ordenes aca */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -113,6 +122,7 @@ Seccion de presentacion!!
 
 .contenedor-imagen-presentacion {
     width: 100%;
+    /* no es necesario display flex aqui */
     display: flex;
 }
 
@@ -124,6 +134,7 @@ Seccion de presentacion!!
     font-size: 25px;
     display: flex;
     font-weight: 700;
+    /* no es necesario width 100% */
     width: 100%;
     margin-bottom: 10px;
 }
@@ -154,6 +165,8 @@ Sección de habilidades
     font-style: italic;
 }
 
+/* tenes h2 en mas lugares que esta seccion, asi que este estilado
+deberia ir arriba de todo junto con los estilos generales  */
 h2 {
     font-weight: 800;
     font-size: 50px;
@@ -165,6 +178,7 @@ h2 {
 .knowledge {
     display: flex;
     flex-direction: column;
+    /* no es necesario justify content aqui, ni align items */
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
@@ -310,6 +324,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    /* no es necesario align content ya que no estamos usando flex wrap */
     align-content: center;
     align-items: center;
     padding: 80px 20px 60px;
@@ -318,6 +333,7 @@ footer {
 }
 
 .iconos-footer {
+    /* los iconos no responden ni a width ni a height */
     width: 2.7rem;
     height: 2.7rem;
     background-color: white;

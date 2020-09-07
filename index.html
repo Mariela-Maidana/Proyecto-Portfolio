@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- No es necesario poner los fonts tanto en HTML como en CSS: en uno de ellos alcanza -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="icon" type="image/ico" href="images/favicon.png.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
@@ -26,6 +27,8 @@
                 <li><a href="#contact" class="boton">CONTACTO</a></li>
             </ul>
         </nav>
+
+        <!-- fijate que este icono se ve *gigante* en celulares -->
         <div class="burger-menu">
             <i class="fa fa-bars"></i>
         </div>
@@ -34,9 +37,12 @@
          SECCION DE PRESENTACION
          ------------------------------->
     <section id="about" class="seccion-presentacion">
+        <!-- no hay necesidad de tener este div, si el estilado correspondiente esta en section -->
         <div class="contenedor-presentacion">
             <div class="intro">
                 <p class="hola">¡Hola! Soy </p>
+                <!-- el estilo y tamaño de este parrafo deberian decirnos algo sobre su importancia: este es tu Portfolio
+                personal, tu nombre es el elemento mas importante en el. Esto deberia ser un h1, no un parrafo cualquiera.  -->
                 <p class="mi-nombre">Mariela Maidana</p>
                 <p class="descripcion">Estudiante de Front End, amante de los animales y entusiasta por demás.</p>
                 <a href="#misproyectos" class="boton">LO QUE HAGO</a>
@@ -54,6 +60,9 @@
             <h2>Mis conocimientos</h2>
             <p class="parrafo-lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, laboriosam pariatur cupiditate culpa dolorem obcaecati sed sequi tempore delectus, eius itaque? .</p>
         </div>
+
+        <!-- no es necesario que aqui haya dos divs contenedor, se podria resolver con solo uno. 
+        esto ademas nos arruina el diseño en tablet -->
         <div class="contenedor">
             <div class="etiquetas">
                 <img class="imagenes" src="images/imagen1.jpg">
@@ -87,9 +96,13 @@
          CITA
          --------------------------------->
     <section class="cita">
+        <!-- aqui te olvidaste del =, con el resultado de que este estilo no se aplica  -->
         <div class "knowledge">
             <i class="fa fa-quote-right"></i>
             <blockquote>Cada día sabemos más y entendemos menos </blockquote>
+
+            <!-- Este h2 no tiene la misma jerarquia o importancia que "Mis proyectos" o "Mis conocimientos". 
+            No deberia ser un h2 -->
             <h2 class="autor">Albert Einstein</h2>
         </div>
     </section>
